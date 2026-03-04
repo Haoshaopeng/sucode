@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503732A3F18D3E7C20EFC5F6 /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4FF964B042F106882581D /* NMSSHSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		57711D2FDD3881718C44E1E3 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF490887A0DBCEF6FE2D4E0 /* libcrypto.a */; };
+		64DDF1E77E6D541207C5F784 /* SSHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985986AA6309A9AB24F72875 /* SSHManager.swift */; };
+		8139624898A349ADA4ED5613 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98216C3D7734E473DC860DC8 /* SettingsView.swift */; };
+		8A22A303FCC5BEC0C793381A /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9221378823AB7A9F4B743EAD /* socket_helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91508833B512BC63F0F5E9EC /* DeviceControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69B567C0EDC902187EE88D /* DeviceControlView.swift */; };
+		95515AB25EE7FCB8C6B84C69 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 758DF599D1AB0CA3F4D443C8 /* libz.tbd */; };
+		993DCC002117C4F949AD880C /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206AC170FEA009BDE456535 /* AddDeviceView.swift */; };
+		AAF0BD03BCF12C05B8F30683 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7652083E21229E982B57B0 /* NMSFTPFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B59D573E9CD6656C857D1ED1 /* BackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6455B224904A782D694B7046 /* BackgroundTaskManager.swift */; };
+		B79B1CEF963371F526DC1381 /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 999553E908E8EF15B4B32C7A /* NMSSHChannel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C6A5AA1937C362EFE96D3E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD2C4476DEBA6FD135B765 /* ContentView.swift */; };
+		CF1F12251F4E1223517749DE /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2A07FC194D8113F697090 /* NMSSHConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D7CC5DF4EF87C68794763684 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = DB724EE0BE465FD5DC2F18AD /* NMSFTP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DCC64C8EBF0CC2E3269B7229 /* AIChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2BA904DDA798DB8786EB6A /* AIChatView.swift */; };
+		DE56EDEA8588480A1D47CD47 /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF388BD07FE51EF580393CD /* NMSSHLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A1B2C3D4E5F6789012345678 /* AIClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F678901234567890 /* AIClusterView.swift */; };
+		A1B2C3D4E5F678901234567B /* AIClusterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F678901234567A /* AIClusterManager.swift */; };
+		E1A2B3C4D5E6F7081920314B /* AnimationStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2B3C4D5E6F7081920314A /* AnimationStyles.swift */; };
+		F2B3C4D5E6F7081920314A5C /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3C4D5E6F7081920314A5B /* AppIconView.swift */; };
+		C3D4E5F67890123456789012 /* ClusterDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6789012345678901234 /* ClusterDevice.swift */; };
+		B2C3D4E5F6789012345678AC /* ClusterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6789012345678AB /* ClusterModels.swift */; };
+		B3C4D5E6F7081920314A5B7F /* BridgeConfigModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D5E6F7081920314A5B7E /* BridgeConfigModels.swift */; };
+		C4D5E6F7081920314A5B8F0 /* BridgeConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7081920314A5B7F8 /* BridgeConfigService.swift */; };
+		A3C4D5E6F7081920314A5B6D /* CommandHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C4D5E6F7081920314A5B6C /* CommandHistoryView.swift */; };
+		B4D5E6F7081920314A5B6C7E /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D5E6F7081920314A5B6C7D /* DataPersistenceManager.swift */; };
+		C5E6F7081920314A5B6C7D8F /* DeviceStatusChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6F7081920314A5B6C7D8E /* DeviceStatusChecker.swift */; };
+		D6F7081920314A5B6C7D8EA0 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F7081920314A5B6C7D8E9F /* PersistenceManager.swift */; };
+		E7081920314A5B6C7D8E9F02 /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7081920314A5B6C7D8E9F01 /* WebSocketClient.swift */; };
+		C3D4E5F67890123456789ABD /* XTerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F67890123456789ABC /* XTerminalView.swift */; };
+		E5F678901234567890123456 /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67890123456789012345678 /* TerminalView.swift */; };
+		DECDC8AA2CF0CFF4FD6EFCFA /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBEC6133C08F133AA81CB4 /* DeviceListView.swift */; };
+		E224D9C14F1F5C4A35CD0F83 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 652842E692CBE355775EC315 /* libssl.a */; };
+		EAC82CCBA2E07EE820C7A707 /* sucodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4472C0CB960B0FB4318A47B /* sucodeApp.swift */; };
+		EFCB8AC0BBFE8105468D41FB /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9898179163665C10072C302B /* NMSSHHostConfig.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5AFD2C4476DEBA6FD135B765 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6206AC170FEA009BDE456535 /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
+		6455B224904A782D694B7046 /* BackgroundTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskManager.swift; sourceTree = "<group>"; };
+		652842E692CBE355775EC315 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH/NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		6DB2A07FC194D8113F697090 /* NMSSHConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
+		758DF599D1AB0CA3F4D443C8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.tbd"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7BCCADA3021C07D12E775CB5 /* sucode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sucode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9221378823AB7A9F4B743EAD /* socket_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
+		98216C3D7734E473DC860DC8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		985986AA6309A9AB24F72875 /* SSHManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHManager.swift; sourceTree = "<group>"; };
+		9898179163665C10072C302B /* NMSSHHostConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
+		999553E908E8EF15B4B32C7A /* NMSSHChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
+		9EA4FF964B042F106882581D /* NMSSHSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
+		A4472C0CB960B0FB4318A47B /* sucodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sucodeApp.swift; sourceTree = "<group>"; };
+		F1234567890ABCDEF1234567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFDBEC6133C08F133AA81CB4 /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		CAF388BD07FE51EF580393CD /* NMSSHLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
+		CC69B567C0EDC902187EE88D /* DeviceControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControlView.swift; sourceTree = "<group>"; };
+		DB724EE0BE465FD5DC2F18AD /* NMSFTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSSH/NMSFTP.m; sourceTree = "<group>"; };
+		DF7652083E21229E982B57B0 /* NMSFTPFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
+		EFF490887A0DBCEF6FE2D4E0 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH/NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
+		FD2BA904DDA798DB8786EB6A /* AIChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatView.swift; sourceTree = "<group>"; };
+		E1A2B3C4D5E6F7081920314A /* AnimationStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStyles.swift; sourceTree = "<group>"; };
+		F2B3C4D5E6F7081920314A5B /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F678901234567A /* AIClusterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClusterManager.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6789012345678AB /* ClusterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterModels.swift; sourceTree = "<group>"; };
+		B3C4D5E6F7081920314A5B7E /* BridgeConfigModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeConfigModels.swift; sourceTree = "<group>"; };
+		C4D5E6F7081920314A5B7F8 /* BridgeConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeConfigService.swift; sourceTree = "<group>"; };
+		C3D4E5F67890123456789ABC /* XTerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTerminalView.swift; sourceTree = "<group>"; };
+		A3C4D5E6F7081920314A5B6C /* CommandHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandHistoryView.swift; sourceTree = "<group>"; };
+		B4D5E6F7081920314A5B6C7D /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		C5E6F7081920314A5B6C7D8E /* DeviceStatusChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusChecker.swift; sourceTree = "<group>"; };
+		D6F7081920314A5B6C7D8E9F /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		E7081920314A5B6C7D8E9F01 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		B2C3D4E5F678901234567890 /* AIClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClusterView.swift; sourceTree = "<group>"; };
+		D4E5F6789012345678901234 /* ClusterDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterDevice.swift; sourceTree = "<group>"; };
+		F67890123456789012345678 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B2D46AA747A59804D46E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95515AB25EE7FCB8C6B84C69 /* libz.tbd in Frameworks */,
+				57711D2FDD3881718C44E1E3 /* libcrypto.a in Frameworks */,
+				E224D9C14F1F5C4A35CD0F83 /* libssl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		175C932161BEBF3B8BB1F58C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				758DF599D1AB0CA3F4D443C8 /* libz.tbd */,
+				EFF490887A0DBCEF6FE2D4E0 /* libcrypto.a */,
+				652842E692CBE355775EC315 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CDD9D0334306383D1A2FC55 /* sucode */ = {
+			isa = PBXGroup;
+			children = (
+				A4472C0CB960B0FB4318A47B /* sucodeApp.swift */,
+				F1234567890ABCDEF1234567 /* Info.plist */,
+				5AFD2C4476DEBA6FD135B765 /* ContentView.swift */,
+				AFDBEC6133C08F133AA81CB4 /* DeviceListView.swift */,
+				FD2BA904DDA798DB8786EB6A /* AIChatView.swift */,
+				B2C3D4E5F678901234567890 /* AIClusterView.swift */,
+				D4E5F6789012345678901234 /* ClusterDevice.swift */,
+				F67890123456789012345678 /* TerminalView.swift */,
+				E1A2B3C4D5E6F7081920314A /* AnimationStyles.swift */,
+				F2B3C4D5E6F7081920314A5B /* AppIconView.swift */,
+				A1B2C3D4E5F678901234567A /* AIClusterManager.swift */,
+				B2C3D4E5F6789012345678AB /* ClusterModels.swift */,
+				B3C4D5E6F7081920314A5B7E /* BridgeConfigModels.swift */,
+				C4D5E6F7081920314A5B7F8 /* BridgeConfigService.swift */,
+				C3D4E5F67890123456789ABC /* XTerminalView.swift */,
+				A3C4D5E6F7081920314A5B6C /* CommandHistoryView.swift */,
+				B4D5E6F7081920314A5B6C7D /* DataPersistenceManager.swift */,
+				C5E6F7081920314A5B6C7D8E /* DeviceStatusChecker.swift */,
+				D6F7081920314A5B6C7D8E9F /* PersistenceManager.swift */,
+				E7081920314A5B6C7D8E9F01 /* WebSocketClient.swift */,
+				98216C3D7734E473DC860DC8 /* SettingsView.swift */,
+				CC69B567C0EDC902187EE88D /* DeviceControlView.swift */,
+				6206AC170FEA009BDE456535 /* AddDeviceView.swift */,
+				985986AA6309A9AB24F72875 /* SSHManager.swift */,
+				6455B224904A782D694B7046 /* BackgroundTaskManager.swift */,
+				9EA4FF964B042F106882581D /* NMSSHSession.m */,
+				999553E908E8EF15B4B32C7A /* NMSSHChannel.m */,
+				DB724EE0BE465FD5DC2F18AD /* NMSFTP.m */,
+				DF7652083E21229E982B57B0 /* NMSFTPFile.m */,
+				6DB2A07FC194D8113F697090 /* NMSSHConfig.m */,
+				9898179163665C10072C302B /* NMSSHHostConfig.m */,
+				CAF388BD07FE51EF580393CD /* NMSSHLogger.m */,
+				9221378823AB7A9F4B743EAD /* socket_helper.m */,
+			);
+			path = sucode;
+			sourceTree = "<group>";
+		};
+		5928955287B8089ED2177128 = {
+			isa = PBXGroup;
+			children = (
+				2CDD9D0334306383D1A2FC55 /* sucode */,
+				BF7A2D27A78D590BDEF15AF2 /* Products */,
+				175C932161BEBF3B8BB1F58C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF7A2D27A78D590BDEF15AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BCCADA3021C07D12E775CB5 /* sucode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3464C0BB506F9B248B417F9 /* sucode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56208123FD24E6A5A8C50DF4 /* Build configuration list for PBXNativeTarget "sucode" */;
+			buildPhases = (
+				E7209FB05162B7572F88D05E /* Sources */,
+				29B2D46AA747A59804D46E1F /* Frameworks */,
+				66F8606E9F0A136E2228EBCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sucode;
+			productName = sucode;
+			productReference = 7BCCADA3021C07D12E775CB5 /* sucode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33EF45D2918B2C5BBEF21D74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F3464C0BB506F9B248B417F9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 9D908D8792E5642B2623649E /* Build configuration list for PBXProject "sucode" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5928955287B8089ED2177128;
+			productRefGroup = BF7A2D27A78D590BDEF15AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3464C0BB506F9B248B417F9 /* sucode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F8606E9F0A136E2228EBCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7209FB05162B7572F88D05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC82CCBA2E07EE820C7A707 /* sucodeApp.swift in Sources */,
+				C6A5AA1937C362EFE96D3E28 /* ContentView.swift in Sources */,
+				DECDC8AA2CF0CFF4FD6EFCFA /* DeviceListView.swift in Sources */,
+				DCC64C8EBF0CC2E3269B7229 /* AIChatView.swift in Sources */,
+				A1B2C3D4E5F6789012345678 /* AIClusterView.swift in Sources */,
+				C3D4E5F67890123456789012 /* ClusterDevice.swift in Sources */,
+				E5F678901234567890123456 /* TerminalView.swift in Sources */,
+				E1A2B3C4D5E6F7081920314B /* AnimationStyles.swift in Sources */,
+				F2B3C4D5E6F7081920314A5C /* AppIconView.swift in Sources */,
+				A1B2C3D4E5F678901234567B /* AIClusterManager.swift in Sources */,
+				B2C3D4E5F6789012345678AC /* ClusterModels.swift in Sources */,
+				B3C4D5E6F7081920314A5B7F /* BridgeConfigModels.swift in Sources */,
+				C4D5E6F7081920314A5B8F0 /* BridgeConfigService.swift in Sources */,
+				C3D4E5F67890123456789ABD /* XTerminalView.swift in Sources */,
+				A3C4D5E6F7081920314A5B6D /* CommandHistoryView.swift in Sources */,
+				B4D5E6F7081920314A5B6C7E /* DataPersistenceManager.swift in Sources */,
+				C5E6F7081920314A5B6C7D8F /* DeviceStatusChecker.swift in Sources */,
+				D6F7081920314A5B6C7D8EA0 /* PersistenceManager.swift in Sources */,
+				E7081920314A5B6C7D8E9F02 /* WebSocketClient.swift in Sources */,
+				8139624898A349ADA4ED5613 /* SettingsView.swift in Sources */,
+				91508833B512BC63F0F5E9EC /* DeviceControlView.swift in Sources */,
+				993DCC002117C4F949AD880C /* AddDeviceView.swift in Sources */,
+				64DDF1E77E6D541207C5F784 /* SSHManager.swift in Sources */,
+				B59D573E9CD6656C857D1ED1 /* BackgroundTaskManager.swift in Sources */,
+				503732A3F18D3E7C20EFC5F6 /* NMSSHSession.m in Sources */,
+				B79B1CEF963371F526DC1381 /* NMSSHChannel.m in Sources */,
+				D7CC5DF4EF87C68794763684 /* NMSFTP.m in Sources */,
+				AAF0BD03BCF12C05B8F30683 /* NMSFTPFile.m in Sources */,
+				CF1F12251F4E1223517749DE /* NMSSHConfig.m in Sources */,
+				EFCB8AC0BBFE8105468D41FB /* NMSSHHostConfig.m in Sources */,
+				DE56EDEA8588480A1D47CD47 /* NMSSHLogger.m in Sources */,
+				8A22A303FCC5BEC0C793381A /* socket_helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		016703F6406E99FE32A32CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = R8RQVKK444;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = sucode/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "需要访问本地网络以连接 SSH 设备";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_GENERATION = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucode.sucode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8186AE241DE1410256BA407F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = R8RQVKK444;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = sucode/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "需要访问本地网络以连接 SSH 设备";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_GENERATION = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sucode.sucode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EE6B6ADC095CDC56BE16A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/sucode/NMSSH_Headers",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH/Config",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH/Protocols",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH-iOS/Libraries/include",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH-iOS/Libraries/include/libssh2",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH-iOS/Libraries/lib",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lssh2",
+					"-lcrypto",
+					"-lssl",
+					"-lz",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/sucode/sucode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C25F4F6540DF31069317F7C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/sucode/NMSSH_Headers",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH/Config",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH/Protocols",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH-iOS/Libraries/include",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH-iOS/Libraries/include/libssh2",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/sucode/NMSSH/NMSSH-iOS/Libraries/lib",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-lssh2",
+					"-lcrypto",
+					"-lssl",
+					"-lz",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/sucode/sucode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56208123FD24E6A5A8C50DF4 /* Build configuration list for PBXNativeTarget "sucode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016703F6406E99FE32A32CD7 /* Debug */,
+				8186AE241DE1410256BA407F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D908D8792E5642B2623649E /* Build configuration list for PBXProject "sucode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE6B6ADC095CDC56BE16A9E /* Debug */,
+				C25F4F6540DF31069317F7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33EF45D2918B2C5BBEF21D74 /* Project object */;
+}

@@ -1,0 +1,152 @@
+import SwiftUI
+
+struct ContentView: View {
+    @State private var selectedTab = 0
+
+    init() {
+        let tabAppearance = UITabBarAppearance()
+        tabAppearance.configureWithTransparentBackground()
+        tabAppearance.backgroundColor = .clear
+        tabAppearance.backgroundEffect = nil
+        UITabBar.appearance().standardAppearance = tabAppearance
+        UITabBar.appearance().scrollEdgeAppearance = tabAppearance
+    }
+
+    var body: some View {
+        ZStack {
+            Color.black.ignoresSafeArea()
+            LinearGradient(
+                colors: [Color.purple.opacity(0.4), Color.blue.opacity(0.3), Color.black],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+
+            TabView(selection: $selectedTab) {
+                DashboardView()
+                    .tabItem {
+                        Image(systemName: "square.grid.2x2.fill")
+                        Text("首页")
+                    }
+                    .tag(0)
+
+                DeviceListView()
+                    .tabItem {
+                        Image(systemName: "server.rack")
+                        Text("设备")
+                    }
+                    .tag(1)
+
+                AIChatView()
+                    .tabItem {
+                        Image(systemName: "bubble.left.and.bubble.right.fill")
+                        Text("AI 助手")
+                    }
+                    .tag(2)
+
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "gearshape.fill")
+                        Text("设置")
+                    }
+                    .tag(3)
+            }
+            .tint(.white)
+            .background(Color.clear)
+        }
+    }
+}
+
+struct DashboardView: View {
+    var body: some View {
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 20) {
+                Spacer().frame(height: 60)
+
+                HStack {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("sucode")
+                            .font(.system(size: 36, weight: .bold))
+                            .foregroundColor(.white)
+                        Text("远程服务器管理")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                    Spacer()
+                    Circle()
+                        .fill(Color.white.opacity(0.2))
+                        .frame(width: 48, height: 48)
+                        .overlay(Image(systemName: "person.fill").foregroundColor(.white))
+                }
+                .padding(.horizontal)
+
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(Color.white.opacity(0.15))
+                    .frame(height: 140)
+                    .overlay(
+                        VStack(spacing: 16) {
+                            HStack {
+                                HStack(spacing: 6) {
+                                    Circle().fill(Color.green).frame(width: 8, height: 8)
+                                    Text("系统在线").font(.subheadline).foregroundColor(.white)
+                                }
+                                .padding(.horizontal, 12)
+                                .padding(.vertical, 6)
+                                .background(Color.green.opacity(0.2))
+                                .cornerRadius(16)
+                                Spacer()
+                            }
+                            HStack {
+                                VStack(spacing: 4) {
+                                    Text("3").font(.title2).fontWeight(.bold).foregroundColor(.white)
+                                    Text("设备").font(.caption).foregroundColor(.gray)
+                                }
+                                .frame(maxWidth: .infinity)
+                                VStack(spacing: 4) {
+                                    Text("1").font(.title2).fontWeight(.bold).foregroundColor(.white)
+                                    Text("连接").font(.caption).foregroundColor(.gray)
+                                }
+                                .frame(maxWidth: .infinity)
+                                VStack(spacing: 4) {
+                                    Text("28").font(.title2).fontWeight(.bold).foregroundColor(.white)
+                                    Text("命令").font(.caption).foregroundColor(.gray)
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                        }
+                        .padding(20)
+                    )
+                    .padding(.horizontal)
+
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("快捷操作").font(.headline).foregroundColor(.white).padding(.horizontal)
+                    HStack(spacing: 12) {
+                        QuickAction(icon: "plus.circle.fill", title: "添加", color: .blue)
+                        QuickAction(icon: "terminal.fill", title: "SSH", color: .green)
+                        QuickAction(icon: "clock.arrow.circlepath", title: "定时", color: .orange)
+                        QuickAction(icon: "chart.line.uptrend.xyaxis", title: "监控", color: .purple)
+                    }
+                    .padding(.horizontal)
+                }
+
+                Spacer(minLength: 100)
+            }
+        }
+        .background(Color.clear)
+        .scrollContentBackground(.hidden)
+    }
+}
+
+struct QuickAction: View {
+    let icon: String, title: String, color: Color
+    var body: some View {
+        VStack(spacing: 8) {
+            Circle()
+                .fill(color.opacity(0.2))
+                .frame(width: 56, height: 56)
+                .overlay(Image(systemName: icon).font(.title2).foregroundColor(color))
+            Text(title).font(.caption).foregroundColor(.white)
+        }
+        .frame(maxWidth: .infinity)
+    }
+}
